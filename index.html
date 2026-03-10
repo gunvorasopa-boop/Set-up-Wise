@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Noto+Sans+SC:wght@300;500;700&display=swap');
-        
+        html { scroll-behavior: smooth; }
         body {
             background-color: #050505;
             color: #ffffff;
@@ -16,7 +16,7 @@
             overflow-x: hidden;
         }
 
-        .neon-text-blue { text-shadow: 0 0 10px #00f2ff, 0 0 20px #00f2ff; color: #00f2ff; }
+        .neon-text-blue { text-shadow: 0 0 4px #00f2ff; color: rgba(0, 242, 255, 0.9); }
         .neon-text-purple { text-shadow: 0 0 10px #bc13fe, 0 0 20px #bc13fe; color: #bc13fe; }
         .neon-border { border: 1px solid rgba(0, 242, 255, 0.3); box-shadow: 0 0 15px rgba(0, 242, 255, 0.1); }
         .neon-border:hover { border-color: #00f2ff; box-shadow: 0 0 20px rgba(0, 242, 255, 0.4); transition: 0.3s; }
@@ -44,12 +44,11 @@
     <canvas id="particle-canvas"></canvas>
 
     <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto relative z-10">
-        <div class="hero-font text-2xl font-bold neon-text-blue italic text-shadow">YIZHUO.LI</div>
-        <div class="space-x-8 text-sm uppercase tracking-widest hidden md:block">
-            <a href="#about" class="hover:neon-text-blue transition">关于我</a>
-            <a href="#projects" class="hover:neon-text-blue transition">实战经验</a>
-            <a href="#skills" class="hover:neon-text-blue transition">技能栈</a>
-        </div>
+      <div class="space-x-8 text-sm uppercase tracking-widest hidden md:block">
+    <a href="#results" class="hover:neon-text-blue transition">实战结果</a>
+    <a href="#projects" class="hover:neon-text-blue transition">项目经验</a>
+    <a href="#vault" class="hover:neon-text-purple transition">资源库</a>
+</div>
     </nav>
 
     <section class="h-screen flex items-center justify-center text-center px-4">
@@ -193,3 +192,33 @@
     </script>
 </body>
 </html>
+<section id="resources" class="py-20 max-w-6xl mx-auto px-6 border-t border-white/5">
+    <h3 class="text-3xl font-bold mb-12 hero-font text-center">我的资源库 / <span class="neon-text-purple">Vault</span></h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <a href="你的仓库链接" class="glass-card p-6 neon-border hover:scale-105 transition text-center block">
+            <i class="fab fa-github text-2xl mb-4 neon-text-blue"></i>
+            <h4 class="font-bold">GitHub 源码</h4>
+            <p class="text-xs text-gray-500 mt-2">存放高考打卡网站等源文件</p>
+        </a>
+
+        <a href="你的网盘或PDF链接" class="glass-card p-6 neon-border hover:scale-105 transition text-center block">
+            <i class="fas fa-file-powerpoint text-2xl mb-4 neon-text-purple"></i>
+            <h4 class="font-bold">精选 PPT 案例</h4>
+            <p class="text-xs text-gray-500 mt-2">展示高审美商业演示文稿</p>
+        </a>
+
+        <a href="视频链接" class="glass-card p-6 neon-border hover:scale-105 transition text-center block">
+            <i class="fas fa-play-circle text-2xl mb-4 neon-text-blue"></i>
+            <h4 class="font-bold">视频号作品</h4>
+            <p class="text-xs text-gray-500 mt-2">“浪尖儿社区”项目视频</p>
+        </a>
+
+        <a href="简历下载地址" class="glass-card p-6 neon-border hover:scale-105 transition text-center block">
+            <i class="fas fa-user-tie text-2xl mb-4 neon-text-purple"></i>
+            <h4 class="font-bold">详细简历</h4>
+            <p class="text-xs text-gray-500 mt-2">法学+AI复合背景详情</p>
+        </a>
+
+    </div>
+</section>
